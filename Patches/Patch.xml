@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This replaces the chocolate havested from a tree with raw cocoa, a def we created elsewhere. It also changes it to produce 40 raw cocoa, instead of 20, to fit the recipe. -->
+
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]/plant/harvestedThingDef</xpath>
+	<value>
+	  <harvestedThingDef>RawCocoa</harvestedThingDef>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCocoa"]/plant/harvestYield</xpath>
+	<value>
+	  <harvestYield>40</harvestYield>
+    </value>
+  </Operation>
+</Patch>

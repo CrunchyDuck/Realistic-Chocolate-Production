@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The def for the chocolate recipe -->
+
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_Chocolate</defName>
+    <label>make chocolate</label>
+    <description>Make chocolate from raw cocoa, harvested from cocoa trees.</description>
+    <jobString>Making chocolate</jobString>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <!-- Work amount will likely be modified from 1000 later. -->
+    <workAmount>500</workAmount>
+    <!-- Not entirely sure on what this next line does, so checking this if an error or bug pops up might be a good idea -->
+    <targetCountAdjustment>20</targetCountAdjustment>
+	
+    <!-- Designating cocoa for use in the recipe -->
+    <ingredients>
+      <li>
+	    <filter>
+	      <thingDefs>
+		    <li>RawCocoa</li>
+		  </thingDefs>
+	    </filter>
+	    <count>40</count>
+	  </li>
+    </ingredients>
+	<!-- How chocolate is made from RawCocoa -->
+	  <recipeUsers>
+	    <li>FueledStove</li>
+		<li>ElectricStove</li>
+	  </recipeUsers>
+	  <workSpeedStat>CookSpeed</workSpeedStat>
+	  <workSkill>Cooking</workSkill>
+	  <skillRequirements>
+	    <Cooking>4</Cooking>
+	  </skillRequirements>
+	
+    <fixedIngredientFilter>
+      <thingDefs>
+	    <li>RawCocoa</li>
+	  </thingDefs>
+    </fixedIngredientFilter>
+    <!-- Marking what the recipe produces -->
+    <products>
+      <Chocolate>20</Chocolate>
+    </products>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>Make_MilkChocolate</defName>
+    <label>make milk chocolate</label>
+    <description>Make chocolate from raw cocoa and milk, harvested from cocoa trees.</description>
+    <jobString>Making milk chocolate</jobString>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>30</targetCountAdjustment>
+    <ingredients>
+      <li>
+	    <filter>
+	      <thingDefs>
+		    <li>RawCocoa</li>
+		  </thingDefs>
+	    </filter>
+	    <count>40</count>
+	  </li>
+	  <li>
+	    <filter>
+		  <thingDefs>
+		    <li>Milk</li>
+		  </thingDefs>
+		</filter>
+		<count>10</count>
+	  </li>
+    </ingredients>
+	<!-- How chocolate is made from RawCocoa -->
+	  <recipeUsers>
+	    <li>FueledStove</li>
+		<li>ElectricStove</li>
+	  </recipeUsers>
+	  <workSpeedStat>CookSpeed</workSpeedStat>
+	  <workSkill>Cooking</workSkill>
+	  <skillRequirements>
+	    <Cooking>5</Cooking>
+	  </skillRequirements>
+	
+    <fixedIngredientFilter>
+      <thingDefs>
+	    <li>RawCocoa</li>
+		<li>Milk</li>
+	  </thingDefs>
+    </fixedIngredientFilter>
+    <!-- Marking what the recipe produces -->
+    <products>
+      <MilkChocolate>30</MilkChocolate>
+    </products>
+  </RecipeDef>
+  
+  
+</Defs>

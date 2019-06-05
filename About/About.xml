@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Realistic Chocolate Production</name>
+  <author>CrunchyDuck, Oken</author>
+  <targetVersion>1.0.0</targetVersion>
+  <description>Makes cocoa trees produce raw cocoa, that has to be prepared at a cooking station to make chocolate, or milk chocolate.
+  </description>
+</ModMetaData>
